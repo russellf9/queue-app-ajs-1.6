@@ -1,0 +1,16 @@
+{
+  "presets": ["es2015"],
+  "plugins": ["angularjs-annotate"],
+  "env": {
+    "test": {
+      "presets": ["babel-preset-power-assert"],
+      "plugins": [
+        ["istanbul", {
+          "exclude": [
+            "client/src/specs.js",
+            "client/src/**/*.spec.js"
+          ]
+      }]]
+    }
+  }
+}
